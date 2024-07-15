@@ -1,0 +1,35 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	position:relative;
+}
+
+a,button{
+	cursor:pointer;
+}
+
+
+
+
+section{
+	margin:5em auto;
+	display:grid;
+	gap:1em;
+	grid-template-columns:repeat(3,auto);
+	justify-items:center;
+	align-items:center;
+}
+
+div{
+	height:50px;
+	width:50px;
+	border:1px solid black;
+	text-align: center;
+}
+
+h1{
+	text-align:center;
+}

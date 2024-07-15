@@ -1,0 +1,27 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	position:relative;
+	background-color:black;
+	color:white;
+	transition:all .4s ease-in-out;
+}
+
+a,button{
+	cursor:pointer;
+}
+
+.container{
+	margin:1rem auto;
+	padding:1rem;
+	border-radius:5px;
+	box-shadow:2px 2px 4px #f9f9f9;
+}
+
+.one{
+	border:1px solid #f4f5f9;
+
+}

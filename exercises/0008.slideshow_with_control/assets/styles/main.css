@@ -1,0 +1,105 @@
+
+
+/* Main Stylesheet */
+
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .3s ease-in-out;
+}
+
+html {
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {}
+
+a:hover {
+	cursor: pointer;
+}
+
+button {
+	padding: .5em;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: azure;
+	border: 1px solid azure;
+	border-radius: 5%;
+}
+
+li {
+	cursor: pointer;
+}
+
+.clear {}
+
+
+
+
+
+
+
+
+
+.slides{
+	margin:1em;
+}
+
+.slide{
+	height:75vh;
+	width:100%;
+}
+
+.slide01{
+	background-color:aquamarine;
+}
+
+.slide02{
+	background-color:indianred;
+}
+
+.slide03{
+	background-color:khaki;
+}
+
+.controlButtons{
+	margin:1em;
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(0,auto));
+	grid-gap:1em;
+	justify-items:center;
+	align-items:center;
+}
+
+.dots{}
+
+.dot{
+	display:inline-block;
+	height:15px;
+	width:15px;
+}
+
+#dot01{
+	background-color:slategrey;
+}
+
+#dot02{
+	background-color:slategrey;
+}
+
+#dot03{
+	background-color:slategrey;
+}
+
+.activeDot{
+	display:inline-block;
+	height:15px;
+	width:15px;
+	background-color:seagreen;
+}

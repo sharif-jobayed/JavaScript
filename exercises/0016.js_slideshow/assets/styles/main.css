@@ -1,0 +1,115 @@
+
+
+/* Main Stylesheet */
+
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .3s ease-in-out;
+}
+
+html {
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {}
+
+a:hover {
+	cursor: pointer;
+}
+
+button {
+	padding: .5em;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: azure;
+	border: 1px solid azure;
+	border-radius: 5%;
+}
+
+li {
+	cursor: pointer;
+}
+
+.clear {}
+
+
+
+
+
+
+
+
+
+.slideShow{}
+
+	.slides{}
+
+		.slide{
+			height:75vh;
+			width:100%;
+		}
+
+		.slide01{
+			background-image:linear-gradient(to right, white, green);
+		}
+
+		.slide02{
+			background-image:linear-gradient(to top, white, blue);
+		}
+
+		.slide03{
+			background-image:linear-gradient(to left, white, red);
+		}
+
+	.bnd{
+		margin:1em;
+		display:grid;
+		grid-template-columns:repeat(auto-fit,minmax(0,auto));
+		justify-items:center;
+		align-items:center;
+	}
+
+		.buttons{}
+
+		.btnPrev{}
+
+		.btnNext{}
+
+	.dots{}
+
+		.dot{
+			margin:.3em;
+			display:inline-block;
+			height:15px;
+			width:15px;
+			background-color:aqua;
+			border-radius:50%;
+		}
+
+		.dot01{
+			/* background-image:linear-gradient(to right, white, green); */
+		}
+
+		.dot02{
+			/* background-image:linear-gradient(to top, white, blue); */
+		}
+
+		.dot03{
+			/* background-image:linear-gradient(to left, white, red); */
+		}
+
+		.activeDot{
+			margin:.3em;
+			display:inline-block;
+			height:15px;
+			width:15px;
+			background-color:tomato;
+			border-radius:50%;
+		}
