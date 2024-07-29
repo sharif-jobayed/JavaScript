@@ -33,9 +33,9 @@ const GRAPHIC_OPTIONS = new Map(
 
 GRAPHIC_OPTIONS.forEach((option) => {
 	console.log(option);
-	if(option >= 50) {
+	if (option >= 50) {
 		console.log(`High impact`);
-	} else if(option >= 40 && option < 50) {
+	} else if (option >= 40 && option < 50) {
 		console.log(`Medium impact`);
 	} else {
 		console.log(`Low impact`);
