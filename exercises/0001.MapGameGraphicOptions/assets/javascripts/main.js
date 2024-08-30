@@ -1,34 +1,70 @@
 
+const graphicOptions = new Map(
+	[
+		[`Textures`, `High`],
+		[`Shadows`, `Medium`],
+		[`AntiAliasing`, `TAA or FXAA`],
+		[`AmbientOcclusion`, `SSAO`],
+		[`Lighting`, `High`],
+		[`Effects`, `Medium`],
+		[`PostProcessing`, `High (Motion Blur Off)`],
+		[`Reflections`, `Medium`],
+		[`SSR`, `Medium`],
+		[`WaterQuality`, `Medium`],
+		[`Foliage`, `Medium`],
+		[`VolumetricEffects`, `Medium`],
+		[`MotionBlur`, `Off`],
+		[`DepthOfField`, `Medium`],
+		[`Tessellation`, `Off or Low`],
+		[`MeshQuality`, `High`],
+		[`ParticleQuality`, `Medium`],
+		[`TerrainQuality`, `High`],
+		[`ViewDistance`, `Medium to High`],
+		[`FOV`, `90-100 degrees`],
+		[`vSync`, `Off (or Adaptive in drivers)`],
+		[`DynamicResolutionScaling`, `Off`],
+		[`FutureFrameRendering`, `On`],
+		[`HairRendering`, `Off or Low`],
+		[`RayTracing`, `Off`],
+		[`SubsurfaceScattering`, `Medium`],
+		[`AdvancedPhysX`, `Off`],
+		[`Bloom`, `On (Medium)`],
+		[`ChromaticAberration`, `Off`],
+		[`SharpeningFilter`, `On (Low to Medium)`],
+		[`FilmGrain`, `Off`],
+	]
+);
 
-// Main JavaScript
+console.log(graphicOptions.size);
 
-/* Page Tags */
-const body = document.querySelectorAll ("body");
-const html = document.querySelectorAll ("html");
-const button = document.querySelectorAll ("button");
-const div = document.querySelectorAll ("div");
-const span = document.querySelectorAll ("span");
-const header = document.querySelectorAll ("header");
-const aside = document.querySelectorAll ("aside");
-const main = document.querySelectorAll ("main");
-const footer = document.querySelectorAll ("footer");
-const anchor = document.querySelectorAll ("a");
-const image = document.querySelectorAll ("img");
-const section = document.querySelectorAll ("section");
-const ul = document.querySelectorAll ("ul");
-const ol = document.querySelectorAll ("ol");
-const li = document.querySelectorAll ("li");
-const table = document.querySelectorAll ("table");
-const thead = document.querySelectorAll ("thead");
-const tbody = document.querySelectorAll ("tbody");
-const tr = document.querySelectorAll ("tr");
-const th = document.querySelectorAll ("th");
-const td = document.querySelectorAll ("td");
-const form = document.querySelectorAll ("form");
-const link = document.querySelectorAll ("link");
-const meta = document.querySelectorAll ("meta");
-const script = document.querySelectorAll ("script");
-const blockquote = document.querySelectorAll ("blockquote");
-const hr = document.querySelectorAll ("hr");
-const br = document.querySelectorAll ("br");
-/* Page Tags end */
+// Sorted by Key
+const sortedByKey = new Map(
+	[...graphicOptions.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+);
+
+console.log("Sorted by Key:");
+console.log(sortedByKey);
+
+// Sorted by Value
+const sortedByValue = new Map(
+	[...graphicOptions.entries()].sort((a, b) => a[1].localeCompare(b[1]))
+);
+
+console.log("Sorted by Value:");
+console.log(sortedByValue);
+
+// Reverse Sorted by Key
+const reverseSortedByKey = new Map(
+	[...graphicOptions.entries()].sort((a, b) => b[0].localeCompare(a[0]))
+);
+
+console.log("Reverse Sorted by Key:");
+console.log(reverseSortedByKey);
+
+// Reverse Sorted by Value
+const reverseSortedByValue = new Map(
+	[...graphicOptions.entries()].sort((a, b) => b[1].localeCompare(a[1]))
+);
+
+console.log("Reverse Sorted by Value:");
+console.log(reverseSortedByValue);
