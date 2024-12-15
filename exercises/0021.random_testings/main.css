@@ -1,0 +1,29 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	position:relative;
+	font-family:'Times New Roman', Times, serif;
+}
+
+a,button{
+	cursor:pointer;
+}
+
+
+
+
+#divOne{
+	width:80%;
+	margin:2em auto;
+	padding:1em;
+	width:80%;
+	/* border:1px solid #000; */
+	border-radius:5px;
+	font-size:20px;
+	color:#004c4c;
+	background-image:linear-gradient(to right, #b2d8d8,  	#66b2b2);
+	box-shadow:2px 2px 4px #006666;
+}

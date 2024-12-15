@@ -1,0 +1,48 @@
+
+
+/* Main Stylesheet */
+
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .3s ease-in-out;
+}
+
+html {
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {}
+
+a:hover {
+	cursor: pointer;
+}
+
+button {
+	padding: .5em;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: azure;
+	border: 1px solid azure;
+	border-radius: 5%;
+}
+
+li {
+	cursor: pointer;
+}
+
+.clear {}
+
+.a{
+	height:100px;
+	width:100px;
+	background-color:rgb(44, 167, 95);
+	margin:2em;
+	border-radius:15%;
+}

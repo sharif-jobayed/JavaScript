@@ -1,0 +1,75 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.tasbih {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.tasbih > h1{
+  text-align: center;
+}
+
+.tasbih > h1 a{
+	text-decoration:none;
+  width: 100%;
+  margin: auto;
+  color: #2f6f56;
+  text-shadow: 2px 2x 4px #18392b;
+}
+
+.tButton {
+  font-size: 2000%;
+  height: 85vh;
+  width: 95%;
+  /* text-align: center; */
+  margin: auto;
+	padding:1rem;
+  border: none;
+  border-radius: 25px;
+  background-image:linear-gradient(306deg, rgba(2,0,36,1) 0%, rgba(127,202,0,1) 0%, rgba(216,239,178,1) 68%);
+  color:#18392b;
+  text-shadow: 3px 3px 4px #b9c3bf;
+
+	display:grid;
+	justify-content:center;
+	align-items:center;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px wide */
+  .tButton {
+    font-size: 1300%;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens up to 576px wide */
+  .tButton {
+    font-size: 1000%;
+    height: 85vh;
+  }
+}
+
+/* More media queries for different screen sizes as needed */
+
+/* Responsiveness ends */

@@ -1,0 +1,51 @@
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	position:relative;
+}
+
+a,button{
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+.accordion{
+	width:25%;
+	margin:1em auto;
+}
+
+.accordionItem{}
+
+	.accordionTitle{
+		cursor:pointer;
+		background-color:aqua;
+		text-align:center;
+		margin:.3em;
+		padding:.2em;
+	}
+
+	.accordionContent{
+		display:none;
+		background-color:thistle;
+		font-size:18px;
+		margin:.3em;
+		padding:.5em;
+	}
+
+
+
+
+.accordionItem.active .accordionContent{
+	display:block;
+}
+

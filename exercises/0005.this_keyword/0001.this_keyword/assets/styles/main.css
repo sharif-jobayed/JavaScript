@@ -1,0 +1,61 @@
+
+
+/* Main Stylesheet */
+
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .3s ease-in-out;
+}
+
+html {
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {}
+
+a:hover {
+	cursor: pointer;
+}
+
+button {
+	padding: .5em;
+	border: 1px solid black;
+	border-radius: 5%;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: black;
+	color: azure;
+	border: 1px solid azure;
+	border-radius: 5%;
+}
+
+li {
+	cursor: pointer;
+}
+
+.clear {}
+
+/* Main Stylesheet ends */
+
+
+.fullPage{
+	max-width:50%;
+	margin: 5em auto;
+	text-align:center;
+}
+
+.buttonSet{
+	margin: 3em;
+
+	display:grid;
+	grid-gap:1em;
+	grid-template-columns:repeat(5,1fr);
+}
+
+button{
+	padding:.5em;
+}
