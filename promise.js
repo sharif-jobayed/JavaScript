@@ -19,6 +19,7 @@ aPromise_0001
 
 /*--------------------------------------------------------------------------------------------------------*/
 
+// aPromise_0002
 const aPromise_0002 = new Promise((resolve, reject) => {
 	if (aNumber_0001 > 15) {
 		resolve(`In the aPromise_0002, the promise is fulfilled!`);
