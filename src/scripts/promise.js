@@ -15,7 +15,7 @@ aPromise_0001
 	.then((result) => { console.info(result) })
 	.catch((error) => { console.warn(error) })
 	.finally(() => { console.info(`Promise is done.`) })
-	;
+	;	
 
 /*--------------------------------------------------------------------------------------------------------*/
 
