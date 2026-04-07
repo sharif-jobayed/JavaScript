@@ -1,0 +1,51 @@
+:root {
+	--var-one: #daf8e3;
+	--var-two: #97ebdb;
+	--var-three: #00c2c7;
+	--var-four: #0086ad;
+	--var-five: #005582;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gameBoard {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--var-one);
+	margin: 5% 30%;
+	padding: 2rem;
+}
+
+.cell {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
+	align-items: center;
+	justify-items: center;
+
+	min-height: 10rem;
+	min-width: 10rem;
+	border-radius: 5%;
+	box-shadow: 0 0 5px var(--var-four);
+	cursor: pointer;
+	margin: .5rem;
+	background-color: var(--var-two);
+	font-size: 4rem;
+	color: var(--var-four);
+}
+
+.cell:hover {
+	background-color: var(--var-three);
+	color: var(--var-five);
+	box-shadow: 0 0 10px var(--var-five);
+	transition: .3s ease-in-out;
+}
